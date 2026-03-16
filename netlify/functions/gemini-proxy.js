@@ -5,7 +5,7 @@ exports.handler = async (event) => {
 
   try {
     const { contents } = JSON.parse(event.body);
-    const API_KEY = process.env.VITE_GEMINI_API_KEY;
+    const API_KEY = process.env.GEMINI_API_KEY;
     const MODEL = "gemini-2.5-flash-lite";
     const URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
 
@@ -33,9 +33,9 @@ exports.handler = async (event) => {
     console.error("Proxy Error:", error.message);
     return {
       statusCode: 500,
-      body: JSON.stringify({ 
+      body: JSON.stringify({
         error: "Failed to fetch from Gemini",
-        details: error.message
+        details: error.message,
       }),
     };
   }
