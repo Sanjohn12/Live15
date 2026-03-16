@@ -1,0 +1,53 @@
+/* Global Reset & Font */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.map-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.sidebar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  padding: 10px;
+  z-index: 1000;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+/* Leaflet attribution — minimal dark style */
+.leaflet-control-attribution {
+  background: rgba(15, 23, 42, 0.75) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 9px !important;
+  padding: 2px 6px !important;
+  border-radius: 4px 0 0 0 !important;
+  backdrop-filter: blur(4px) !important;
+}
+.leaflet-control-attribution a {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Sidebar scrollbar — thin & minimal */
+.glass-sidebar ::-webkit-scrollbar {
+  width: 4px;
+}
+.glass-sidebar ::-webkit-scrollbar-track {
+  background: transparent;
+}
+.glass-sidebar ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.glass-sidebar ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

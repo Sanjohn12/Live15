@@ -1,0 +1,64 @@
+/* MarkerCluster Base Styles */
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  display: block;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+
+/* Cluster Circle Styles */
+.marker-cluster {
+  background-color: rgba(59, 130, 246, 0.6); /* Blue with opacity */
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #3b82f6;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.marker-cluster:hover {
+  background-color: rgba(59, 130, 246, 0.8);
+  border-color: #2563eb;
+}
+
+/* Cluster Small */
+.marker-cluster-small {
+  background-color: rgba(34, 197, 94, 0.6); /* green */
+  border-color: #22c55e;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+/* Cluster Medium */
+.marker-cluster-medium {
+  background-color: rgba(250, 204, 21, 0.7); /* yellow */
+  border-color: #facc15;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+/* Cluster Large */
+.marker-cluster-large {
+  background-color: rgba(239, 68, 68, 0.7); /* red */
+  border-color: #ef4444;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+/* Shadow */
+.marker-cluster-shadow {
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}

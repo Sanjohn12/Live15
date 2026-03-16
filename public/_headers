@@ -1,0 +1,5 @@
+/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Headers: Range
+  Access-Control-Expose-Headers: Content-Range, Content-Length, Accept-Ranges
+  Accept-Ranges: bytes

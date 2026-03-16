@@ -1,0 +1,62 @@
+:root {
+  /* Premium Color Palette - Indigo/Slate */
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --bg-sidebar: rgba(255, 255, 255, 0.7);
+  --bg-card: rgba(255, 255, 255, 0.8);
+  --text-main: #0f172a;
+  --text-secondary: #64748b;
+  --border-subtle: rgba(226, 232, 240, 0.8);
+  --accent-success: #10b981;
+  --accent-danger: #ef4444;
+  --glass-blur: blur(12px);
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Glassmorphism sidebar effect */
+.glass-sidebar {
+  background: var(--bg-sidebar) !important;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-left: 1px solid var(--border-subtle) !important;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Typography and smooth score counts */
+.score-value {
+  transition: var(--transition-smooth);
+  animation: scoreFadeIn 1s ease-out;
+}
+
+@keyframes scoreFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Styled Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Leaflet Customizations */
+.leaflet-popup-content-wrapper {
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  border-radius: 12px;
+  color: var(--text-main);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.leaflet-control-geocoder {
+  border-radius: 10px !important;
+  border: 1px solid var(--border-subtle) !important;
+}
